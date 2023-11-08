@@ -16,20 +16,29 @@
                  Width="218" 
                  d:ItemsSource="{d:SampleData ItemCount=5}" 
                  Canvas.Left="558" 
-                 Canvas.Top="17" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                 Canvas.Top="17" 
+                 HorizontalAlignment="Left" 
+                 VerticalAlignment="Center" SelectionChanged="lbLastNames_SelectionChanged"/>
         <Button x:Name="btnDisplayFullName"
                 Content="Display Full Name" 
                 Canvas.Left="350" 
                 Canvas.Top="88" 
                 HorizontalAlignment="Left" 
                 VerticalAlignment="Center" 
-                Width="134" Click="btnDisplayFullName_Click" RenderTransformOrigin="0.485,2.879"/>
+                Width="134" 
+                Click="btnDisplayFullName_Click" 
+                RenderTransformOrigin="0.485,2.879"/>
         <Label Content="First Name" 
                Canvas.Left="43" 
-               Canvas.Top="16" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.526,-0.167"/>
+               Canvas.Top="16" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top" 
+               RenderTransformOrigin="0.526,-0.167"/>
         <Label Content="Last Name" 
                Canvas.Left="198" 
-               Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+               Canvas.Top="16" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Center"/>
         <TextBox x:Name="txtFirstName" 
                  Canvas.Left="17" 
                  TextWrapping="Wrap" 
@@ -53,6 +62,13 @@
                 HorizontalAlignment="Left" 
                 VerticalAlignment="Top" 
                 Width="134" Click="btnAddNames_Click"/>
+        <Button x:Name="btnRemoveStudentAtIndex"
+                Content="Remove Student At Index" 
+                Canvas.Left="83" 
+                Canvas.Top="138" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top" 
+                Width="148" Height="24" Click="btnRemoveStudentAtIndex_Click"/>
 
     </Canvas>
 </Window>

@@ -53,5 +53,22 @@ namespace GAStephanieLopezListAndComboBox
             cmbFirstName.Items.Refresh();
             lbLastNames.Items.Refresh();
         }
+
+        private void btnRemoveStudentAtIndex_Click(object sender, RoutedEventArgs e)
+        {
+            int firstNameIndex = cmbFirstName.SelectedIndex;
+            int lastNamesIndex = lbLastNames.SelectedIndex;
+
+            firstNames.RemoveAt(firstNameIndex);
+            lastNames.RemoveAt(lastNamesIndex);
+
+            cmbFirstName.Items.Refresh();
+            lbLastNames.Items.Refresh();
+        }
+
+        private void lbLastNames_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            cmbFirstName.SelectedIndex = lbLastNames.SelectedIndex;
+        }
     }
 }
